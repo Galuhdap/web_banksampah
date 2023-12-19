@@ -29,11 +29,11 @@
                         <td>{{ $item->nama_produk }}</td>
                         <td>{{ $item->created_at }}</td>
                         <td>
-                            <a href="/dashboard/produk/{{ $item->id }}" class="badge bg-info"><span
+                            {{-- <a href="/dashboard/produk/{{ $item->id }}" class="badge bg-info"><span
                                     data-feather="eye"></span></a>
 
                             <a href="/dashboard/produk/{{ $item->id }}/edit" class="badge bg-warning"><span
-                                    data-feather="edit"></span></a>
+                                    data-feather="edit"></span></a> --}}
 
                             <form action="/dashboard/produk/{{ $item->id }}" method="post" class="d-inline">
                                 @method('delete')
